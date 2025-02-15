@@ -26,7 +26,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjMwMDE3NTJAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.IxQGa7I_VG7q-fPKrpFk_IPUld0YJnmzGCkZd0m5eZE"  # Ensure this token is set in your environment
+AIPROXY_TOKEN = os.environ["OPENAI_API_KEY"]
 AI_PROXY_URL = "https://aiproxy.sanand.workers.dev/openai/v1/chat/completions"
 
 
