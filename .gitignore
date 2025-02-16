@@ -1,0 +1,5 @@
+venv/
+_pycache_/
+*.log
+docker-compose.override.yml
+*.env
